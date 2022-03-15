@@ -1,0 +1,119 @@
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 5vw;
+}
+
+nav ul {
+  display: flex;
+  gap: 2vw;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 1rem;
+  max-width: 20ch;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 1.953rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+}
+
+header {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 3rem;
+  align-items: center;
+}
+
+.header_text p {
+  max-width: 40vw;
+}
+
+.header_graphics {
+  background-color: aqua;
+  background-image: url("pexels-nicholas-dias-2116475.jpg");
+  background-size: cover;
+  min-width: auto;
+  min-height: 81vh;
+  background-position: center;
+}
+
+#advantages {
+  margin: 5rem 3rem;
+}
+
+.advantages_cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.advantages_card {
+  background-color: aliceblue;
+  border-radius: 1rem;
+}
+.advantages_card_text {
+  padding: 2rem;
+}
+
+.advantages_card_graphics {
+  background-image: url("pexels-revac-film's&photography-115145.jpg");
+  background-size: cover;
+  min-width: auto;
+  min-height: 40vh;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 3rem;
+  gap: 2rem;
+}
+
+#product article {
+  margin: 1rem 0;
+}
+
+#product h3 {
+  margin-bottom: 0.5rem;
+}
+
+#product .product_graphics {
+  background-image: url("pexels-nishant-aneja-2393835.jpg");
+  background-size: cover;
+  min-width: auto;
+  min-height: 40vh;
+  background-position: center;
+}
+
+#product h2 {
+  grid-column: 1/-1;
+}
