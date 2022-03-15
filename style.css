@@ -128,6 +128,18 @@ header {
   background-position: center;
   border-radius: 1rem 1rem 0 0;
 }
+.advantages_cards > :nth-child(2) .advantages_card_graphics {
+  background-image: url("pexels-gijs-coolen-2549941.jpg");
+}
+.advantages_cards > :nth-child(3) .advantages_card_graphics {
+  background-image: url("pexels-nishant-aneja-2393835.jpg");
+}
+.advantages_cards > :nth-child(4) .advantages_card_graphics {
+  background-image: url("pexels-nicholas-dias-2116475.jpg");
+}
+.advantages_cards > :nth-child(5) .advantages_card_graphics {
+  background-image: url("pexels-ferdinand-studio-1103995.jpg");
+}
 
 #product {
   display: grid;
