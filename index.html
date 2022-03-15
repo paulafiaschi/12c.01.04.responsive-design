@@ -11,6 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Oswald:wght@400;600&family=Raleway:wght@400;700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!--Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
   <!-- Inspired by https://textluke.com/ & https://carrot.tech/ for educational purpose-->
   <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
@@ -21,12 +23,26 @@
   <nav>
     <!-- Menu component layout -->
     <a href="index.html">Logo</a>
-    <ul>
+    <ul class="dMenu">
       <li><a href="#advantages">Advantages</a></li>
       <li><a href="#product">Product</a></li>
       <li><a href="#team">Team</a></li>
     </ul>
     <button type="button" class="button2">Learn More &#x2794;</button>
+    <ul class="menu">
+      <li><a href="#advantages" class="menuItem
+        ">Advantages</a></li>
+      <li><a href="#product" class="menuItem
+        ">Product</a></li>
+      <li><a href="#team" class="menuItem
+        ">Team</a></li>
+    </ul>
+    <button class="hamburger">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    </button>
+
   </nav>
   <header>
     <!-- Header layout -->
