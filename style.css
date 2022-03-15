@@ -1,14 +1,29 @@
+:root {
+  --color-primary1: #191e20;
+  --color-primary2: #2c2b29;
+  --color-secondary1: #f8c702;
+  --color-secondary2: #b18f08;
+  --color-accent1: #df1432;
+  --color-accent2: #3695c3;
+}
+
 /* Resetter */
 * {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  color: var(--color-secondary1);
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
 }
-
+body {
+  background-color: var(--color-primary1);
+}
 nav {
   display: flex;
   justify-content: space-between;
   margin: 1rem 5vw;
+  align-items: center;
 }
 
 nav ul {
@@ -16,12 +31,34 @@ nav ul {
   gap: 2vw;
 }
 
+.button1 {
+  background-color: var(--color-accent2);
+  color: var(--color-primary1);
+  border: none;
+  padding: 1rem;
+}
+.button2 {
+  background: none;
+  color: var(--color-accent2);
+  border: solid 1.5px var(--color-accent2);
+  padding: 1rem;
+}
+.button3 {
+  background: none;
+  color: var(--color-accent1);
+  border: solid 1.5px var(--color-accent1);
+  /* border: none; */
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
 h1,
 h2,
 h3 {
-  font-family: "Cabin", sans-serif;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 1rem;
   max-width: 20ch;
+  color: #f8c702;
 }
 
 h1 {
@@ -34,7 +71,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 p {
@@ -50,12 +87,8 @@ header {
   align-items: center;
 }
 
-.header_text p {
-  max-width: 40vw;
-}
-
 .header_graphics {
-  background-color: aqua;
+  background-color: var(--color-primary1);
   background-image: url("pexels-nicholas-dias-2116475.jpg");
   background-size: cover;
   min-width: auto;
@@ -70,22 +103,26 @@ header {
 .advantages_cards {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .advantages_card {
-  background-color: aliceblue;
+  background-color: #030405;
   border-radius: 1rem;
 }
 .advantages_card_text {
   padding: 2rem;
 }
 
+.advantages_card_text p {
+  color: var(--color-secondary2);
+}
+
 .advantages_card_graphics {
   background-image: url("pexels-revac-film's&photography-115145.jpg");
   background-size: cover;
-  min-width: auto;
-  min-height: 40vh;
+  width: auto;
+  min-height: 200px;
   background-position: center;
   border-radius: 1rem 1rem 0 0;
 }
@@ -116,4 +153,206 @@ header {
 
 #product h2 {
   grid-column: 1/-1;
+}
+
+.product_text p {
+  color: var(--color-secondary2);
+}
+
+.highlight {
+  display: flex;
+  padding: 10vw 0;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--color-secondary1);
+}
+
+.highlight h2 {
+  color: var(--color-primary1);
+  max-width: 40ch;
+  margin: 3rem;
+  font-size: 2.41rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+
+.highlight_small_cards div {
+  padding: 1rem;
+  min-width: 20vw;
+}
+
+.highlight_small_cards p,
+.highlight_small_cards h3 {
+  color: var(--color-primary1);
+}
+
+.highlight button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+#team {
+  margin: 3rem;
+}
+
+#team article {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 6rem;
+}
+
+#team > :nth-child(2) .team_graphics {
+  background-image: url("pexels-kevin-bidwell-2056949.jpg");
+  background-size: cover;
+  min-width: 50vw;
+  min-height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#team > :nth-child(3) .team_graphics {
+  background-image: url("pexels-oliver-sjöström-1122410.jpg");
+  background-size: cover;
+  min-width: 50vw;
+  min-height: 80vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#team > :nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.team_text h3 {
+  font-size: 2.41rem;
+}
+
+.team_text ul {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+
+.team_text li {
+  margin: 0.5rem;
+}
+
+.team_text a {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--color-accent1);
+  text-decoration: none;
+}
+
+#contact {
+  padding: 3rem;
+  background-color: var(--color-primary2);
+}
+
+#contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 5vh 10vw 0vh 10vw;
+}
+
+#contact_form > :nth-child(3) {
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+input,
+#message {
+  width: 100%;
+}
+
+#message {
+  height: 20vh;
+}
+
+footer {
+  display: flex;
+  padding: 5vh 5vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  margin-bottom: 0;
+}
+
+footer ul {
+  margin-bottom: 1rem;
+}
+
+footer li {
+  margin: 0.15rem;
+  color: var(--color-secondary2);
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .header_graphics {
+    min-height: 50vh;
+    width: 75vw;
+  }
+
+  #product {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight_small_cards {
+    display: block;
+    margin-top: 0;
+  }
+
+  .highlight_small_cards div {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    min-width: 80vw;
+  }
+
+  .highlight button {
+    margin-top: 0;
+  }
+
+  .highlight h2 {
+    margin: 1rem 3rem;
+  }
+
+  #team article {
+    display: block;
+  }
+
+  .team_graphics {
+    min-height: 300px !important;
+    background-position: center !important;
+    margin-top: 2rem;
+  }
+
+  .team_text {
+    margin-top: 1rem;
+  }
+
+  #team > :nth-child(3) .team_graphics {
+    background-position: bottom !important;
+  }
+
+  #contact_form {
+    margin: 0;
+  }
 }
