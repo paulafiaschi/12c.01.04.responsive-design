@@ -41,6 +41,7 @@ nav ul {
   color: var(--color-primary1);
   border: none;
   padding: 1rem;
+  margin-top: 1rem;
 }
 .button2 {
   background: none;
@@ -303,6 +304,7 @@ header {
 input,
 #message {
   width: 100%;
+  color: var(--color-primary1);
 }
 
 #message {
@@ -311,7 +313,7 @@ input,
 
 footer {
   display: flex;
-  padding: 5vh 5vw;
+  padding: 5vh 3rem;
   align-items: top;
   flex-wrap: wrap;
   justify-content: space-between;
