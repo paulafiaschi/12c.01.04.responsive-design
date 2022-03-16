@@ -26,6 +26,11 @@ nav {
   align-items: center;
 }
 
+nav span,
+footer span {
+  font-size: 3rem !important;
+}
+
 nav ul {
   display: flex;
   gap: 2vw;
@@ -147,6 +152,7 @@ header {
   justify-content: center;
   margin: 3rem;
   gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 #product article {
@@ -273,6 +279,10 @@ header {
   background-color: var(--color-primary2);
 }
 
+#contact label {
+  color: var(--color-secondary2);
+}
+
 #contact_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -341,7 +351,11 @@ footer li {
 }
 
 .closeIcon {
+  font-size: 2rem !important;
   display: none;
+}
+.menuIcon {
+  font-size: 2rem !important;
 }
 
 .menu {
