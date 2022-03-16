@@ -97,7 +97,7 @@ header {
 
 .header_graphics {
   background-color: var(--color-primary1);
-  background-image: url("pexels-nicholas-dias-2116475.jpg");
+  background-image: url("pexels-gijs-coolen-2549941.webp");
   background-size: cover;
   min-width: auto;
   min-height: 81vh;
@@ -127,7 +127,7 @@ header {
 }
 
 .advantages_card_graphics {
-  background-image: url("pexels-revac-film's&photography-115145.jpg");
+  background-image: url("pexels-ferdinand-studio-1103995.webp");
   background-size: cover;
   width: auto;
   min-height: 200px;
@@ -135,16 +135,16 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 .advantages_cards > :nth-child(2) .advantages_card_graphics {
-  background-image: url("pexels-gijs-coolen-2549941.jpg");
+  background-image: url("pexels-gijs-coolen-2549941.webp");
 }
 .advantages_cards > :nth-child(3) .advantages_card_graphics {
-  background-image: url("pexels-nishant-aneja-2393835.jpg");
+  background-image: url("pexels-nishant-aneja-2393835.webp");
 }
 .advantages_cards > :nth-child(4) .advantages_card_graphics {
-  background-image: url("pexels-nicholas-dias-2116475.jpg");
+  background-image: url("pexels-nicholas-dias-2116475.webp");
 }
 .advantages_cards > :nth-child(5) .advantages_card_graphics {
-  background-image: url("pexels-ferdinand-studio-1103995.jpg");
+  background-image: url("pexels-ferdinand-studio-1103995.webp");
 }
 
 #product {
@@ -165,7 +165,7 @@ header {
 }
 
 #product .product_graphics {
-  background-image: url("pexels-nishant-aneja-2393835.jpg");
+  background-image: url("pexels-nishant-aneja-2393835.webp");
   background-size: cover;
   min-width: auto;
   min-height: 40vh;
@@ -239,7 +239,7 @@ header {
 }
 
 #team > :nth-child(2) .team_graphics {
-  background-image: url("pexels-kevin-bidwell-2056949.jpg");
+  background-image: url("pexels-kevin-bidwell-2056949.webp");
   background-size: cover;
   min-width: 50vw;
   min-height: 80vh;
@@ -248,7 +248,7 @@ header {
 }
 
 #team > :nth-child(3) .team_graphics {
-  background-image: url("pexels-oliver-sjöström-1122410.jpg");
+  background-image: url("ls-oliver-sj195182str195182m-1122410.webp");
   background-size: cover;
   min-width: 50vw;
   min-height: 80vh;
